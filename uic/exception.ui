@@ -25,8 +25,12 @@
   <property name="windowTitle">
    <string/>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon.ico</normaloff>../icon.ico</iconset>
+  </property>
   <property name="styleSheet">
-   <string notr="true">Widget{
+   <string notr="true">QWidget{
 color: #000;
 background: #fff;
 }
