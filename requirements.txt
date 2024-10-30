@@ -1,0 +1,7 @@
+pyaes==1.6.1
+PyQt6==6.7.1
+PyQt6-Qt6==6.7.3
+PyQt6_sip==13.8.0
+Pyrogram==2.0.106
+PySocks==1.7.1
+TgCrypto==1.2.5
