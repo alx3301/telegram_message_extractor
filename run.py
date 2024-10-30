@@ -127,7 +127,8 @@ class NewSessionForm(BaseForm):
             try:
                 self.client.connect()
                 self.sent_code = self.client.send_code(self.phone_number.text())
-                confirmation_form = ConfirmationForm(self.client, self.phone_number.text(), self.sent_code.phone_code_hash, self.password.text())
+                confirmation_form = ConfirmationForm(
+                    self.client, self.phone_number.text(), self.sent_code.phone_code_hash, self.password.text())
                 self.show_form(confirmation_form)
             except Exception as e:
                 exception_form = ExceptionForm(str(e))
